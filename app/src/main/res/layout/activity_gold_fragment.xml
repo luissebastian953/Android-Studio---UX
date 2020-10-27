@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoldFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:background="@drawable/card_gold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_card_gold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                app:layout_constraintLeft_toLeftOf="@id/cons_card_gold"
+                app:layout_constraintTop_toTopOf="@id/cons_card_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="GOLD"
+                android:textColor="@android:color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                app:layout_constraintRight_toRightOf="@id/cons_card_gold"
+                app:layout_constraintTop_toTopOf="@id/cons_card_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_attach_money_black_24dp" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_attach_money_black_24dp" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_attach_money_black_24dp" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_digimon_white" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/liner_detail"
+            app:layout_constraintEnd_toStartOf="@id/constraint_ll"
+            app:layout_constraintTop_toBottomOf="@id/tv_digimon_price_detail"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/card_white"
+            android:textColor="@color/gold2"
+            android:text="Buy our gold membership"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:background="@drawable/card_white_flat_bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/desc_price_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+                android:padding="5dp"
+                android:textStyle="italic"
+                android:textColor="@color/darkerBlue1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/year"
+                android:textColor="@color/darkerBlue1"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/liner_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lighterBlue1"/>
+        <TextView
+            android:id="@+id/desc_header_g"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lighterBlue1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Description"/>
+        <TextView
+            android:id="@+id/desc_detail_g"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lighterBlue1"
+            android:lineSpacingExtra="5dp"
+            android:text="+ Description"/>
+    </LinearLayout>
+
+</RelativeLayout>

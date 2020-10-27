@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_home_layout"
+    android:background="@color/lighterBlue1"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:background="@color/lighterBlue1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, user"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/white"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_membership"
+        android:background="@color/lighterBlue1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check out our membership type here, for more digimon"
+        android:textSize="15dp"
+        android:layout_below="@id/tv_user"
+        android:textColor="@android:color/white"
+        android:ellipsize = "marquee"
+        android:fadingEdge = "horizontal"
+        android:marqueeRepeatLimit = "marquee_forever"
+        android:scrollHorizontally = "true"
+        android:singleLine = "true"
+        android:paddingBottom="2dp"
+        android:paddingLeft="20dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vw_pager"
+        android:layout_below="@id/tv_membership"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_home_layout"
+            android:layout_width="match_parent"
+            android:background="@color/lighterBlue1"
+            android:textColor="@android:color/white"
+            app:tabTextColor="@android:color/white"
+            app:tabIndicatorColor="@android:color/white"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_bronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Bronze" />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Silver"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Gold"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

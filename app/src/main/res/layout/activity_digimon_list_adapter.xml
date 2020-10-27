@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_adapter_digimon"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_white"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".DigimonListAdapter">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_digimon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:background="@drawable/card_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_digimon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Name"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_digimon_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Number"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_digimon_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:text="Price"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+</LinearLayout>

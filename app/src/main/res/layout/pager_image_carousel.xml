@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    app:layout_constraintCircleRadius="15dp"
+    android:background="@drawable/card_white"
+    tools:context=".ImageCarousel">
+
+    <ImageView
+        android:id="@+id/iv_contact_carousel"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/card_white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/tv_contact_desc_carousel"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Contact Us"/>
+
+        <TextView
+            android:id="@+id/tv_contact_call_carousel"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Contact"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:textAlignment="textEnd" />
+    </RelativeLayout>
+
+</LinearLayout>
